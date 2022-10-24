@@ -1,0 +1,85 @@
+body {
+    background-image: url("../images/background.png");
+    background-color: #041823;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 85%;
+}
+#bg-image {
+    position: absolute;
+    margin: auto;
+    z-index: -1;
+    overflow: hidden;
+}
+
+:root {
+    --logo-height: 140px;
+
+    --img-color-1: #4c6d45;
+    --img-color-2: #365436;
+
+    --basic-color: #344e38;
+    --shadow-color: #0d180d;
+
+    --span-color: #40a450;
+    --span-shadow-color: #093a09;
+}
+
+#logo {
+    width: max-content;
+    margin: auto;
+}
+
+#logo img {
+    border: solid #949092 20px;
+    width: 300px;
+
+    position: relative;
+    z-index: 3;
+    border-radius: 50%;
+    box-shadow: 10px 10px 30px #131123;
+    float: left;
+    margin-left: -90px;
+    background: linear-gradient(to right bottom, var(--img-color-1), var(--img-color-2));
+}
+
+#logo-name {
+    position: relative;
+    float: left;
+    z-index: 0;
+
+    width: 920px;
+    height: var(--logo-height);
+
+    color: white;
+    font: bold 100px 'Caladea';
+    text-shadow: -5px -5px 3px var(--basic-color);
+    box-shadow: 20px 20px 30px var(--shadow-color);
+    border: solid 20px var(--basic-color);
+
+    text-align: center;
+    line-height: var(--logo-height);
+
+    margin: 0px;
+    margin-top: 62px;
+    margin-left: -100px;
+
+    background: linear-gradient(to right bottom, #949092, #5b5256);
+    border-radius: 30px;
+}
+
+#logo-name span {
+    color: var(--span-color);
+    text-shadow: 6px 6px 6px var(--span-shadow-color);
+}
+
+#container {
+    background: linear-gradient(to right bottom, #c9c9c9, #ffffff44);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    margin-top: -100px;
+}
